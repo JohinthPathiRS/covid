@@ -91,7 +91,8 @@
             "tsConfig": "tsconfig.spec.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/assets/vaccination.jpg"
             ],
             "styles": [
               "src/styles.css"
@@ -101,5 +102,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "30e97ffb-67e5-4ee1-9569-fce14b2cda1d"
   }
 }

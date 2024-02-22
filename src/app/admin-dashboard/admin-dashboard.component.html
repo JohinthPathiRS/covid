@@ -1,0 +1,26 @@
+<!-- admin-dashboard.component.html -->
+<div>
+    <h3>Vaccination Data (Admin Dashboard)</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Location</th>
+          <th>Count</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let vaccine of vaccines">
+          <td>{{ vaccine.type }}</td>
+          <td>{{ vaccine.location }}</td>
+          <td>{{ vaccine.count }}</td>
+          <td>
+            <button (click)="deleteVaccination(vaccine.id)">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  
+    <button routerLink="/add">Insert New Vaccination</button>
+  </div>

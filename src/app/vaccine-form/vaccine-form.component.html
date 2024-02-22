@@ -1,0 +1,17 @@
+<!-- vaccine-form.component.html -->
+<div>
+   
+<form (submit)="insertVaccination()">
+    <h3>Provide Details</h3>
+    <label for="type">Type:</label>
+    <input type="text" id="type" name="type" [(ngModel)]="newVaccine.type" required>
+  
+    <label for="location">Location:</label>
+    <input type="text" id="location" name="location" [(ngModel)]="newVaccine.location" required>
+  
+    <label for="count">Count:</label>
+    <input type="number" id="count" name="count" [(ngModel)]="newVaccine.count" required>
+  
+    <button type="submit">Insert Vaccine</button>
+</form>
+</div>

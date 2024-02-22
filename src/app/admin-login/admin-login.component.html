@@ -1,0 +1,14 @@
+<!-- admin-login.component.html -->
+<div>
+    <h2>Admin Login</h2>
+    <form (submit)="onAdminLogin()">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" [(ngModel)]="adminCredentials.username" required>
+  
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" [(ngModel)]="adminCredentials.password" required>
+  
+      <button type="submit">Login</button>
+    </form>
+  </div>
+  
